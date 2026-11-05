@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISBAT University | Student Registration</title>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #9b3a3a;
+        margin: 0;
+        padding: 0;
+    }
+
+    header, nav, footer {
+        background: #003366;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        color: #3cff00;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    form {
+        max-width: 700px;
+        margin: 20px auto;
+        background: #c7a5a5;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    fieldset {
+        border: 1px solid #00ff2a;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    legend {
+        font-weight: bold;
+        color: #003366;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 6px;
+        box-sizing: border-box;
+        margin-top: 3px;
+    }
+
+  
+    input[type="radio"] + label,
+    input[type="checkbox"] + label {
+        display: inline;
+        font-weight: normal;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin-top: 10px;
+        background: #003366;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>ISBAT University</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#programmes">Programmes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="studentid">Student ID:</label>
+                <input type="text" id="studentid" name="studentid"
+                    placeholder="ISBAT/2025/001" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="07[0-9]{8}" placeholder="07XXXXXXXX"
+                    title="10 digits starting with 07" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+                <label for="nationality">Nationality:</label>
+                <select id="nationality" name="nationality" required>
+                    <option value="">-- Select --</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="rwanda">Rwanda</option>
+                    <option value="southsudan">South Sudan</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Programme Details</legend>
+                <label for="programme">Programme of Study:</label>
+    <select id="programme" name="programme" required>
+        <option value="">-- Select Programme --</option>
+        <option value="bscs">BSc Computer Science</option>
+        <option value="bit">Bachelor of Information Technology</option>
+        <option value="bba">Bachelor of Business Administration</option>
+        <option value="baf">Bachelor of Accounting and Finance</option>
+        <option value="llb">Bachelor of Laws</option>
+    </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Units</legend>
+                
+
+    <input type="checkbox" id="unit1" name="units" value="intro-programming">
+    <label for="unit1">Introduction to Programming</label><br>
+
+    <input type="checkbox" id="unit2" name="units" value="web-dev">
+    <label for="unit2">Web Development Fundamentals</label><br>
+
+    <input type="checkbox" id="unit3" name="units" value="db-systems">
+    <label for="unit3">Database Systems</label><br>
+
+    <input type="checkbox" id="unit4" name="units" value="networking">
+    <label for="unit4">Computer Networking</label><br>
+
+    <input type="checkbox" id="unit5" name="units" value="maths">
+    <label for="unit5">Discrete Mathematics</label><br>
+
+    <input type="checkbox" id="unit6" name="units" value="comm-skills">
+    <label for="unit6">Communication Skills</label>
+
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ISBAT University. Registration No: <strong>011250253</strong></p>
+    </footer>
+</body>
+
+</html>
